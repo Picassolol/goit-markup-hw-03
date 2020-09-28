@@ -348,7 +348,7 @@ img {
 .portfolio-main-button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .portfolio-main-button-list-item:not(:last-child) {
@@ -402,6 +402,9 @@ img {
 .portfolio-main-projects-list {
   display: flex;
   flex-wrap: wrap;
+}
+.portfolio-main-projects {
+  padding-bottom: 94px;
 }
 
 .portfolio-main-projects :hover,
