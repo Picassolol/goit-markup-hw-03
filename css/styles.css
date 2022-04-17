@@ -183,8 +183,13 @@ img {
   display: flex;
 }
 
+.about-us-list-item {
+  width: 270px;
+}
+
 .about-us-list-item:not(:last-child) {
   margin-right: 30px;
+  
 }
 
 .about-us-list-title {
@@ -250,15 +255,16 @@ img {
 }
 
 .our-team-list-item {
-  min-height: 368px;
+  width: 270px;
+  
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list-img {
-  margin-bottom: 30px;
+.team-card-container {
+  padding: 30px 59px;
 }
 
 .our-team-list-name {
