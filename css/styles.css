@@ -6,6 +6,7 @@
   --adress-color: rgba(255, 255, 255, 0.6);
   --dark-background-color: #2f303a;
   --light-background-color: #f5f4fa;
+  --card-set-gap: 30px;
 }
 
 html {
@@ -21,6 +22,11 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .link {
@@ -79,7 +85,6 @@ body {
 .navigation-list {
   display: flex;
   margin-left: 93px;
-  
 }
 
 .navigation-list-item:not(:last-child) {
@@ -145,7 +150,6 @@ body {
   text-transform: uppercase;
   color: var(--secondary-accent-color);
   margin-bottom: 30px;
-  
 }
 
 .hero-btn {
@@ -161,7 +165,6 @@ body {
   background-color: var(--accent-color);
 
   color: var(--secondary-accent-color);
-  
 }
 
 /* end-hero */
@@ -245,9 +248,8 @@ body {
 .our-team-list-item {
   min-height: 368px;
   text-align: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -327,9 +329,7 @@ a[href="https://goo.gl/maps/GkhVgALrAWbUuMnt9"]
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  
 }
-  
 
 .filter-list-btn {
   font-weight: 500;
@@ -341,7 +341,6 @@ a[href="https://goo.gl/maps/GkhVgALrAWbUuMnt9"]
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
-  
 }
 
 .filter-list-item:not(:last-child) {
@@ -352,37 +351,30 @@ a[href="https://goo.gl/maps/GkhVgALrAWbUuMnt9"]
 .filter-list-btn:focus {
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .portfolio-list-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-  
-.portfolio-list-item:nth-child(3n) {
-  margin-right: 0;
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  flex-basis: (100% / 3 - var(--card-set-gap));
 }
 
-.portfolio-list-item:nth-child(3n+7) {
-  margin-bottom: 0;
+.portfolio-card-content {
+ padding: 20px 24px;
+border: 1px solid #EEEEEE;
 }
-
-
-.portfolio-list-link {
-  display: block;
-}
-
 
 .portfolio-list-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
